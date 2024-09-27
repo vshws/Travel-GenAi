@@ -8,7 +8,7 @@ const ItineraryGenerator = () => {
 
   const handleGenerate = async (destination, days) => {
     try {
-      const response = await fetch('http://localhost:5000/generate-itinerary', {
+      const response = await fetch('https://travel-genai-backenene-production.up.railway.app/generate-itinerary', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
